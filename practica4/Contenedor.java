@@ -1,14 +1,12 @@
 
-public class Contenedor<T extends Producto> implements Ocupa, Guarda{
+public class Contenedor<T extends Ocupa> extends Guarda implements Ocupa{
 
-	
-	public boolean guardar(Ocupa elemento) {
-		return true;
+	public Contenedor(double capacidad){
+		super(capacidad);
 	}
-
 	
 	public double getVolumen() {
-		return 0;
+		return capacidad;
 	}
 
 }

@@ -1,9 +1,17 @@
 
 public class Producto implements Ocupa{
 
-	@Override
+	private String nombre;
+	private double volumen;
+
+	public Producto(double volumen, String nombre){
+		this.volumen = volumen;
+		this.nombre = nombre;
+	}
+
+
 	public double getVolumen() {
-		return 0;
+		return volumen;
 	}
 
 }

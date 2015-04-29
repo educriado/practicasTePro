@@ -1,7 +1,7 @@
 
-public class Camion implements Guarda{
+public class Camion extends Guarda{
 
-	public boolean guardar(Ocupa elemento){
-		return true;
+	public Camion(double capacidad){
+		super(capacidad);
 	}
 }
